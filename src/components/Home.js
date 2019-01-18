@@ -3,10 +3,16 @@ import React,{Component} from 'react';
 class Home extends Component {
     render() {
         return (
-            <div>
-         <header className="App-header">
-            <h1>Ecommerce Web App</h1>
-        </header>
+            <div className="app-header">
+            <div style={{background: 'whitesmoke', height: '100px', display: 'flex', alignItems: 'center', width: 'inherit', marginLeft: '61px', color: '#282c34'}}>
+            <h1 style={{ margin: '0'}}>Shop-if-why</h1>
+            </div>
+            <div style={{display: 'flex', height: '89%',marginLeft: '60px'}}>
+          
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%'}}>
+                maincontent
+            </div>
+            </div>
             </div>
         )
     }
