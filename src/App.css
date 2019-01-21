@@ -27,7 +27,7 @@ body {
 
 .ui.container {
   position: absolute;
-  top: 30px;
+  top: 20px;
   right: 5px;
   width: fit-content;
   margin-left: auto!important;
