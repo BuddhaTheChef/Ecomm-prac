@@ -1,11 +1,9 @@
 import React,{Component} from 'react';
 import Title from './Title';
-
-
+import Product from '../components/Product'
+import { ProductConsumer } from '../context';
+ 
 class Home extends Component {
-    state = {
-        products: []
-    }
     render() {
         return (
             <div className="app-header">
@@ -17,6 +15,15 @@ class Home extends Component {
             <div style={{ display: 'flex', justifyContent: 'center', width: '100%'}}>
               <div>
                 <Title name="Top" title="Products"/>
+                <div>
+                    <ProductConsumer>
+                        {(value)=> {
+                            return value.products.map((product) => {
+                                return <Product key={product.id} product={product}/>
+                            })
+                        }}
+                    </ProductConsumer>
+                </div>
               </div>
             </div>
             </div>
