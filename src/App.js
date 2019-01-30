@@ -9,6 +9,7 @@ import Checkout from './components/Checkout';
 import Items from './components/Items';
 import Search from './components/Search';
 import SideBar from './components/SideBar';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 class App extends Component {
   render() {

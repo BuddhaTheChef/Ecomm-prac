@@ -6,7 +6,6 @@ body {
 }
 .app-header {
   background-color: #282c34;
-  height: 100vh;
   font-size: 20px;
   color: white;
   margin: 0;
@@ -77,7 +76,7 @@ overflow:visible;
 .main-menu {
 background:#212121;
 border-right:1px solid #e5e5e5;
-position:absolute;
+position: fixed;
 top:0;
 bottom:0;
 height:100%;
