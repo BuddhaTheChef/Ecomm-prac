@@ -9,7 +9,10 @@ export default class Product extends Component {
     return (
       <div className="col-9 mx-auto col-md-6 col-lg-3 my-3">
         <div className="card">
-        <div className="img-container" onClick={()=>console.log('you clicked me in image container')}>
+
+        <ProductConsumer>
+            {(value) => (
+        <div className="img-container" onClick={()=> value.handleDetail(id)}>
             <Link to="/items">
             <img src={img} alt="product" className="card-img-top"/>
             </Link>
@@ -17,7 +20,7 @@ export default class Product extends Component {
                 className="cart-btn"
                 style={{width: '100%'}} 
                 disabled={inCart ? true : false} 
-                onClick={()=> {console.log('added to cart')
+                onClick={()=> {value.addToCart(id);
              }}>
                {inCart
                 ?
@@ -27,6 +30,9 @@ export default class Product extends Component {
                 )}
              </button>    
         </div>
+        )}
+        </ProductConsumer>
+
         <div className="card-footer d-flex justify-content-between">
             <p className="align-self-center mb-0" style={{color:'black'}}>{title}</p>
             <h5 className="font-italic mb-0" style={{color:'blue'}}><span>$</span>{price}</h5>
