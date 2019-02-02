@@ -9,13 +9,13 @@ class Items extends Component {
                 {(value)=> {
                 const {id,img, info, price, title, inCart, type} = value.detailProduct;
                 return (
-                 <div>
+                 <div style={{ background: '#212529', height: '-webkit-fill-available'}}>
                     <div className="container">
                         <div className="row">
-                            <h1>{title}</h1>
+                            
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row" style={{marginTop: '120px', padding: '50px', marginLeft: '122px', background: 'whitesmoke', marginRight:'57px',borderRadius: '8px'}}>
                         <div className="col-10 max-auto col-md-6 my-3">
                           <img src={img} alt="product" className="img-fluid"/>  
                         </div>
