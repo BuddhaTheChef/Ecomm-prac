@@ -34,7 +34,8 @@ class Items extends Component {
                           <div>
                               <Link to="/"><button>Back To Products</button></Link>
                               <button disabled={inCart? true: false} onClick={()=>{
-                                  value.addToCart(id)
+                                  value.addToCart(id);
+                                  value.openModal(id);
                               }}>
                                   {inCart? 'In Cart': 'Add to Cart'}
                               </button>
