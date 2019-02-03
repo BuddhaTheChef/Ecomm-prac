@@ -3,6 +3,7 @@ import CartColums from './CartColums';
 import EmptyCart from './EmptyCart';
 import {ProductConsumer} from '../context';
 import CartList from './CartList';
+import CartTotal from './CartTotal';
 
 class Checkout extends Component {
     render() {
@@ -17,6 +18,7 @@ class Checkout extends Component {
                                     <h1 style={{textAlign: 'center', paddingTop: '75px', marginBottom: '30px'}}>Your Cart</h1>
                                     <CartColums/>
                                     <CartList value={value} />
+                                    <CartTotal value={value} />
                                 </React.Fragment>
                             )
                         }
