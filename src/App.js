@@ -5,7 +5,7 @@ import NavBar from './components/NavBar';
 
 import './App.css';
 import Home from './components/Home';
-import Checkout from './components/Checkout';
+import Checkout from './Cart/Checkout';
 import Items from './components/Items';
 import Search from './components/Search';
 import SideBar from './components/SideBar';
