@@ -1,10 +1,15 @@
 import React,{Component} from 'react';
+import { ProductConsumer } from '../context';
 
 class SideBar extends Component {
     render() {
         return (
+            
             <div>
             <div className="area"></div><nav className="main-menu">
+            <ProductConsumer>
+            {(value) => { console.log(value)
+             return (
             <ul>
                 <li>
                     <a href="/">
@@ -75,6 +80,8 @@ class SideBar extends Component {
                     </a>
                 </li>
             </ul>
+            )}}
+            </ProductConsumer>
         </nav>
             </div>
         )
