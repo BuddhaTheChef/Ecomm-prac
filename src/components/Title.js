@@ -3,7 +3,7 @@ const Title = ({name, title}) => {
   return (
     <div>
       <div>
-          <h1>
+          <h1 style={{textAlign: 'center'}}>
             {name} <strong>{title}</strong>
           </h1>
       </div>

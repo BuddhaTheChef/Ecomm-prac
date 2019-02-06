@@ -10,7 +10,7 @@ class SideBar extends Component {
                     <a href="/">
                         <i className="fa fa-home fa-2x"></i>
                         <span className="nav-text">
-                            Stuff
+                            Search
                         </span>
                     </a>
                   
@@ -19,7 +19,7 @@ class SideBar extends Component {
                     <a href="/">
                         <i className="fa fa-laptop fa-2x"></i>
                         <span className="nav-text">
-                        Stuff
+                         Price
                         </span>
                     </a>
                     
@@ -28,7 +28,7 @@ class SideBar extends Component {
                     <a href="/">
                        <i className="fa fa-list fa-2x"></i>
                         <span className="nav-text">
-                        Stuff
+                        Filter Type
                         </span>
                     </a>
                     
@@ -37,7 +37,7 @@ class SideBar extends Component {
                     <a href="/">
                        <i className="fa fa-folder-open fa-2x"></i>
                         <span className="nav-text">
-                        Stuff
+                        Tech
                         </span>
                     </a>
                    
@@ -46,7 +46,7 @@ class SideBar extends Component {
                     <a href="/">
                         <i className="fa fa-bar-chart-o fa-2x"></i>
                         <span className="nav-text">
-                        Stuff
+                        Clothes
                         </span>
                     </a>
                 </li>
@@ -54,7 +54,7 @@ class SideBar extends Component {
                     <a href="/">
                         <i className="fa fa-font fa-2x"></i>
                         <span className="nav-text">
-                        Stuff
+                        Accesories
                         </span>
                     </a>
                 </li>
@@ -62,21 +62,13 @@ class SideBar extends Component {
                    <a href="/">
                        <i className="fa fa-table fa-2x"></i>
                         <span className="nav-text">
-                        Stuff
+                        Art
                         </span>
                     </a>
                 </li>
                 <li>
                    <a href="/">
                         <i className="fa fa-map-marker fa-2x"></i>
-                        <span className="nav-text">
-                        Stuff
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/">
-                       <i className="fa fa-info fa-2x"></i>
                         <span className="nav-text">
                         Stuff
                         </span>

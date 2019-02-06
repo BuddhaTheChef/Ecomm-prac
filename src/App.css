@@ -11,6 +11,20 @@ body {
   margin: 0;
 }
 
+.main-title {
+  margin-left: 50px;
+  text-transform: uppercase;
+  font-family: Knewave, cursive;
+  position: absolute;
+  transform: rotateY;
+  transform: rotate(353deg);
+  top: 25px;
+  font-weight: bold;
+  color: mediumspringgreen;
+  font-size: 90px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
 .nav-container {
   align-items: center;
   height: 50px;
@@ -44,6 +58,22 @@ body {
   text-transform: uppercase;
 }
 
+
+.gridStuff{
+  display: flex;
+  flex-direction: column;
+  height: 400vh;
+  flex-wrap: wrap;
+  width:71%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+}
+
+.itemss{
+  width: 39%;
+  height: auto;
+}
 
 
 
