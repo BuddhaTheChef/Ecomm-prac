@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import { ProductConsumer } from '../context';
 
+
 class SideBar extends Component {
     render() {
         return (
@@ -13,25 +14,25 @@ class SideBar extends Component {
             <ul>
                 <li>
                     <a href="/">
-                        <i className="fa fa-home fa-2x"></i>
+                        <i className="search icon"></i>
                         <span className="nav-text">
-                            Search
+                            <input placeholder="Search" value=""/>
                         </span>
                     </a>
                   
                 </li>
                 <li className="has-subnav">
                     <a href="/">
-                        <i className="fa fa-laptop fa-2x"></i>
+                        <i className="dollar sign icon"></i>
                         <span className="nav-text">
-                         Price
+                         Filter Price
                         </span>
                     </a>
                     
                 </li>
                 <li className="has-subnav">
                     <a href="/">
-                       <i className="fa fa-list fa-2x"></i>
+                       <i className="angle down icon"></i>
                         <span className="nav-text">
                         Filter Type
                         </span>
@@ -40,7 +41,7 @@ class SideBar extends Component {
                 </li>
                 <li className="has-subnav">
                     <a href="/">
-                       <i className="fa fa-folder-open fa-2x"></i>
+                       <i className="mobile alternate icon"></i>
                         <span className="nav-text">
                         Tech
                         </span>
@@ -49,7 +50,7 @@ class SideBar extends Component {
                 </li>
                 <li>
                     <a href="/">
-                        <i className="fa fa-bar-chart-o fa-2x"></i>
+                        <i className="tags icon"></i>
                         <span className="nav-text">
                         Clothes
                         </span>
@@ -57,7 +58,7 @@ class SideBar extends Component {
                 </li>
                 <li>
                     <a href="/">
-                        <i className="fa fa-font fa-2x"></i>
+                        <i className="headphones icon"></i>
                         <span className="nav-text">
                         Accesories
                         </span>
@@ -65,7 +66,7 @@ class SideBar extends Component {
                 </li>
                 <li>
                    <a href="/">
-                       <i className="fa fa-table fa-2x"></i>
+                       <i className="image icon"></i>
                         <span className="nav-text">
                         Art
                         </span>
@@ -73,9 +74,9 @@ class SideBar extends Component {
                 </li>
                 <li>
                    <a href="/">
-                        <i className="fa fa-map-marker fa-2x"></i>
+                        <i className="gamepad icon"></i>
                         <span className="nav-text">
-                        Stuff
+                        Other Stuff
                         </span>
                     </a>
                 </li>
