@@ -1,9 +1,30 @@
 import React,{Component} from 'react';
 import { ProductConsumer } from '../context';
+import Slider from 'react-rangeslider'
+import 'react-rangeslider/lib/index.css'
 
 
 class SideBar extends Component {
+    constructor (props, context) {
+        super(props, context)
+        this.state = {
+          horizontal: 10
+        }
+      }
+
+      handleChangeHorizontal = value => {
+        this.setState({
+          horizontal: value
+        })
+      };
+    
     render() {
+        const { horizontal } = this.state
+        // const horizontalLabels = {
+        //   0: 'Low',
+        //   100: 'High'
+        // }
+    
         return (
             
             <div>
@@ -12,73 +33,73 @@ class SideBar extends Component {
             {(value) => { console.log(value)
              return (
             <ul>
-                <li>
-                    <a href="/">
-                        <i className="search icon"></i>
+                <li style={{color:'grey'}}>
+                        <i className="search icon" style={{marginLeft:'-3px', marginRight: '6px'}}></i>
                         <span className="nav-text">
-                            <input placeholder="Search" value=""/>
+                            <input placeholder="Search" value="" style={{width:'128px',background:'black',border:'none',borderRadius:'8px',padding:'2px 4px'}}/>
                         </span>
-                    </a>
-                  
                 </li>
-                <li className="has-subnav">
-                    <a href="/">
-                        <i className="dollar sign icon"></i>
+                <li className="has-subnav" style={{color:'grey'}}>
+                    
+                        <i className="dollar sign icon" style={{marginLeft:'-3px', marginRight: '6px'}}></i>
                         <span className="nav-text">
                          Filter Price
                         </span>
-                    </a>
-                    
+                        
+        <Slider
+          min={0}
+          max={2000}
+          value={horizontal}
+        //   labels={horizontalLabels}
+          onChange={this.handleChangeHorizontal}
+        />
+        <div className='value'>${horizontal}</div>
+
                 </li>
-                <li className="has-subnav">
-                    <a href="/">
-                       <i className="angle down icon"></i>
+                <li className="drop-div" style={{color:'grey'}}>
+                <div class="dropdown">
+                       <i className="angle down icon" style={{marginLeft:'-3px', marginRight: '0px'}}></i>
                         <span className="nav-text">
-                        Filter Type
-                        </span>
-                    </a>
-                    
+                        <button className="dropbtn">Filter Type</button>
+                        </span>       
+                        <div class="dropdown-content">
+                            <a href="/">Tech</a>
+                            <a href="/">Clothes</a>
+                            <a href="/">Accesories</a>
+                            <a href="/">Art</a>
+                            <a href="/">Other</a>
+                        </div>                  
+                </div>
                 </li>
-                <li className="has-subnav">
-                    <a href="/">
-                       <i className="mobile alternate icon"></i>
+                <li className="has-subnav" style={{color:'grey'}}>
+                       <i className="mobile alternate icon" style={{marginLeft:'-3px', marginRight: '6px'}}></i>
                         <span className="nav-text">
                         Tech
                         </span>
-                    </a>
-                   
                 </li>
-                <li>
-                    <a href="/">
-                        <i className="tags icon"></i>
+                <li style={{color:'grey'}}>
+                        <i className="tags icon" style={{marginLeft:'-3px', marginRight: '6px'}}></i>
                         <span className="nav-text">
                         Clothes
                         </span>
-                    </a>
                 </li>
-                <li>
-                    <a href="/">
-                        <i className="headphones icon"></i>
+                <li style={{color:'grey'}}>
+                        <i className="headphones icon" style={{marginLeft:'-3px', marginRight: '6px'}}></i>
                         <span className="nav-text">
                         Accesories
                         </span>
-                    </a>
                 </li>
-                <li>
-                   <a href="/">
-                       <i className="image icon"></i>
+                <li style={{color:'grey'}}>
+                       <i className="image icon" style={{marginLeft:'-3px', marginRight: '6px'}}></i>
                         <span className="nav-text">
                         Art
                         </span>
-                    </a>
                 </li>
-                <li>
-                   <a href="/">
-                        <i className="gamepad icon"></i>
+                <li style={{color:'grey'}}>
+                        <i className="gamepad icon" style={{marginLeft:'-3px', marginRight: '6px'}}></i>
                         <span className="nav-text">
                         Other Stuff
                         </span>
-                    </a>
                 </li>
             </ul>
             )}}
