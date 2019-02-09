@@ -35,6 +35,18 @@ class ProductProvider extends Component {
         return product;
     }
 
+    getItemType = (type) => {
+        const product = this.state.products.filter(item => item.type === type) 
+        return product;
+    }
+
+    handleDetailType = (type) => {
+        const product = this.getItemType(type);
+        this.setState(()=> {
+            return {detailProduct: product}
+        })
+    }
+
     handleDetail = (id) => {
         const product = this.getItem(id);
         this.setState(()=> {
@@ -148,7 +160,9 @@ class ProductProvider extends Component {
           increment: this.increment,
           decrement: this.decrement,
           removeItem: this.removeItem,
-          clearCart: this.clearCart
+          clearCart: this.clearCart,
+          handleDetailType: this.handleDetailType,
+          getItemType: this.getItemType
         }}>
           {this.props.children}
       </ProductContext.Provider>

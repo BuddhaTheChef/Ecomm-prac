@@ -17,26 +17,22 @@ class SideBar extends Component {
           horizontal: value
         })
       };
+
     
     render() {
         const { horizontal } = this.state
-        // const horizontalLabels = {
-        //   0: 'Low',
-        //   100: 'High'
-        // }
-    
         return (
             
             <div>
             <div className="area"></div><nav className="main-menu">
             <ProductConsumer>
-            {(value) => { console.log(value)
+            {(value) => { 
              return (
             <ul>
                 <li style={{color:'grey'}}>
                         <i className="search icon" style={{marginLeft:'-3px', marginRight: '6px'}}></i>
                         <span className="nav-text">
-                            <input placeholder="Search" value="" style={{width:'128px',background:'black',border:'none',borderRadius:'8px',padding:'2px 4px'}}/>
+                            <input placeholder="Search"  style={{width:'171px',background:'black',border:'none',borderRadius:'8px',padding:'2px 4px'}}/>
                         </span>
                 </li>
                 <li className="has-subnav" style={{color:'grey'}}>
@@ -50,19 +46,18 @@ class SideBar extends Component {
           min={0}
           max={2000}
           value={horizontal}
-        //   labels={horizontalLabels}
           onChange={this.handleChangeHorizontal}
         />
         <div className='value'>${horizontal}</div>
 
                 </li>
                 <li className="drop-div" style={{color:'grey'}}>
-                <div class="dropdown">
+                <div className="dropdown">
                        <i className="angle down icon" style={{marginLeft:'-3px', marginRight: '0px'}}></i>
                         <span className="nav-text">
                         <button className="dropbtn">Filter Type</button>
                         </span>       
-                        <div class="dropdown-content">
+                        <div className="dropdown-content">
                             <a href="/">Tech</a>
                             <a href="/">Clothes</a>
                             <a href="/">Accesories</a>

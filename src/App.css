@@ -108,14 +108,8 @@ body {
 .dropdown:hover .dropbtn {
   background-color: none;
   font-size: 15px;
-  margin-bottom: 181px;
+  margin-bottom: 200px;
 }
-
-
-
-
-
-
 
 .fa-2x {
 font-size: 2em;
@@ -276,7 +270,10 @@ height: 100%;
 .rangeslider-horizontal {
   height: 12px;
   border-radius: 10px;
-  width: 200px;
+  width: 165px;
+    left: 36px;
+    margin-bottom: -28px;
+    margin-top: 31px;
 }
 
 .rangeslider-horizontal .rangeslider__fill {
@@ -299,7 +296,7 @@ height: 100%;
 
 .value {
   position: absolute;
-  top: 62px;
+  top: 77px;
   right: 51px;
 }
 
